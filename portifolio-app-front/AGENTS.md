@@ -18,7 +18,7 @@ Este repositório contém a aplicação web do portfólio profissional de **Rube
 
 - **Tema / Estilo:** Cyberpunk / Dark Navy / Code Terminal.
 - **Referência Visual e Estrutural:** [rubenmarcus.dev](https://www.rubenmarcus.dev/) (layout split-screen no Hero, linhas de terminal, efeitos de brilho em ciano e acentos em vermelho).
-- **Wireframe & UX Source:** Arquivo nativo Pencil em `portifolio-ux/ux-portifolio.pen`.
+- **Wireframe & UX Source:** Arquivo nativo Pencil em [`portifolio-ux/ux-portifolio.pen`](file:///portifolio-ux/ux-portifolio.pen), print renderizado em [`portifolio-ux/ux-portifolio-preview.png`](file:///portifolio-ux/ux-portifolio-preview.png) e guia completo em [`portifolio-ux/README.md`](file:///portifolio-ux/README.md).
 - **Seções Principais:**
   1. **Navbar:** Logo terminal (`> RUBENS.DEV`), links de navegação e botão CTA (*Download CV*).
   2. **Hero:** Layout split — Coluna esquerda com saudações em mono (`// Hello World`), nome, cargo, bio, redes sociais e métricas (*Anos, MAU, MFEs, LCP*); Coluna direita com Avatar envolto em anéis concêntricos com brilho ciano, scratches decorativos e grid hexagonal.
