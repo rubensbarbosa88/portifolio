@@ -1,0 +1,62 @@
+/*
+ * Design System — CSS Custom Properties Reference
+ * Extracted from live Pencil document: portifolio-ux/ux-portifolio.pen
+ *
+ * This file is NOT meant to be imported directly.
+ * Instead, use the Tailwind v4 @theme block in globals.css.
+ * This file serves as a raw token reference.
+ */
+
+:root {
+  /* ── Fonts ── */
+  --font-heading: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono:
+    "JetBrains Mono", ui-monospace, "Cascadia Code", "Fira Code", monospace;
+
+  /* ── Background Colors ── */
+  --bg-dark: #0a1628; /* Page / hero / dark sections */
+  --bg-section: #0d1b2e; /* Alternate sections (experience, projects) */
+  --bg-card: #111d2e; /* Card / panel backgrounds */
+
+  /* ── Accent Colors ── */
+  --cyan-glow: #00d4ff; /* Primary accent — highlights, stats, company names */
+  --cyan-light: #66e0ff; /* Lighter cyan — tag pill text, skill dots */
+  --red-accent: #e63946; /* Secondary accent — CTAs, decorators, section bars */
+
+  /* ── Structural Colors ── */
+  --blue-primary: #1a3a5c; /* Card borders, dividers, tag pill bg */
+  --blue-accent: #2a5a8c; /* Timeline connector lines */
+
+  /* ── Text Colors ── */
+  --text-primary: #ffffff; /* Headings, names, primary text */
+  --text-secondary: #a0b4c8; /* Body text, descriptions, nav links */
+  --text-muted: #5a7a94; /* Dim text — periods, labels, comments */
+
+  /* ── Alpha Variants ── */
+  --cyan-glow-20: #00d4ff33; /* Avatar radial glow */
+  --cyan-glow-8: #00d4ff15; /* Hex pattern dots (cyan) */
+  --red-accent-12: #e6394620; /* Hex pattern dots (red) */
+  --blue-primary-13: #1a3a5c22; /* Scratch/decorative lines */
+
+  /* ── Border Radius ── */
+  --radius-pill: 3px; /* Tag pills, bullet dots */
+  --radius-btn: 4px; /* Buttons */
+  --radius-card: 6px; /* Experience cards */
+  --radius-lg: 8px; /* Skill / project cards */
+
+  /* ── Spacing ── */
+  --gap-section: 64px; /* Section vertical padding */
+  --gap-content: 40px; /* Section-to-content gap */
+  --gap-card: 24px; /* Between cards in grid */
+  --gap-inner: 16px; /* Inside cards */
+  --gap-tight: 8px; /* Between tags, tech items */
+
+  /* ── Layout ── */
+  --page-width: 1440px;
+  --hero-height: 900px;
+  --navbar-height: 64px;
+  --hero-left-col: 700px;
+  --avatar-wrapper: 380px;
+  --avatar-photo: 292px;
+}

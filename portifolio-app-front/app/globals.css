@@ -1,0 +1,156 @@
+@import "tailwindcss";
+
+:root {
+  --background: var(--color-bg-dark);
+  --foreground: var(--color-text-primary);
+}
+
+@theme {
+  --font-orbitron: var(--font-orbitron), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+  --font-sans: var(--font-inter), sans-serif;
+
+  /* ── Colors: Background ── */
+  --color-bg-dark: #0a1628;
+  --color-bg-section: #0d1b2e;
+  --color-bg-card: #112240;
+
+  /* ── Colors: Accent ── */
+  --color-cyan-glow: #00d4ff;
+  --color-cyan-light: #4dd9e8;
+  --color-cyan-muted: #1e6a8a;
+  --color-red-accent: #e63946;
+  --color-red-hover: #d62839;
+
+  /* ── Colors: Structural / Border ── */
+  --color-blue-primary: #1a3a5c;
+  --color-blue-accent: #2a5a8c;
+
+  /* ── Colors: Text ── */
+  --color-text-primary: #f0f4f8;
+  --color-text-secondary: #8899aa;
+  --color-text-muted: #4a5c6e;
+
+  /* ── Backward Compatibility Aliases ── */
+  --color-navy-dark: #0a1628;
+  --color-navy-section: #0d1b2e;
+  --color-navy-card: #112240;
+  --color-navy-border: #1a3a5c;
+  --color-cyan-accent: #00d4ff;
+  --color-text-main: #f0f4f8;
+  --color-text-dim: #4a5c6e;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-bg-dark);
+  color: var(--color-text-primary);
+  font-family:
+    var(--font-inter), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom cyberpunk glow utilities and scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-blue-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-cyan-glow);
+}
+
+@keyframes pulseGlow {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.7;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Avatar Radial Glow */
+.radial-glow-cyan {
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--color-cyan-glow) 20%, transparent) 0%,
+    transparent 70%
+  );
+}
+
+/* Decalque de bolinhas estilo Rocket League (HexagonDecal) */
+.hex-dot-cyan {
+  background-color: color-mix(in srgb, var(--color-cyan-glow) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-cyan-glow) 22%, transparent);
+  box-shadow: 0 0 2px color-mix(in srgb, var(--color-cyan-glow) 8%, transparent);
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.hex-dot-cyan:hover,
+.hex-dot-cyan:focus-visible {
+  background-color: color-mix(in srgb, var(--color-cyan-glow) 40%, transparent);
+  border-color: #ffffff;
+  box-shadow:
+    0 0 8px color-mix(in srgb, var(--color-cyan-glow) 95%, transparent),
+    0 0 18px color-mix(in srgb, var(--color-cyan-glow) 60%, transparent),
+    inset 0 0 7px rgba(255, 255, 255, 0.85);
+  transform: scale(1.18);
+  transition-duration: 0.15s;
+  z-index: 10;
+}
+
+.hex-dot-red {
+  background-color: color-mix(
+    in srgb,
+    var(--color-red-accent) 12%,
+    transparent
+  );
+  border: 1px solid color-mix(in srgb, var(--color-red-accent) 22%, transparent);
+  box-shadow: 0 0 2px
+    color-mix(in srgb, var(--color-red-accent) 8%, transparent);
+  transition:
+    transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+    background-color 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.hex-dot-red:hover,
+.hex-dot-red:focus-visible {
+  background-color: color-mix(
+    in srgb,
+    var(--color-red-accent) 42%,
+    transparent
+  );
+  border-color: #ffffff;
+  box-shadow:
+    0 0 8px color-mix(in srgb, var(--color-red-accent) 95%, transparent),
+    0 0 18px color-mix(in srgb, var(--color-red-accent) 60%, transparent),
+    inset 0 0 7px rgba(255, 255, 255, 0.85);
+  transform: scale(1.18);
+  transition-duration: 0.15s;
+  z-index: 10;
+}
