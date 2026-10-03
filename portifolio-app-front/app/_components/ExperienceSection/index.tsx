@@ -1,40 +1,8 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-
-interface ExperienceItem {
-  company: string;
-  role: string;
-  period: string;
-  tags: string[];
-}
-
-const EXPERIENCES: ExperienceItem[] = [
-  {
-    company: "Julius Baer (Wealth Management)",
-    role: "Senior Front-end Developer",
-    period: "2023 — Presente",
-    tags: [
-      "React",
-      "TypeScript",
-      "Microfrontends",
-      "Module Federation",
-      "Design System",
-    ],
-  },
-  {
-    company: "Itaú Unibanco",
-    role: "Front-end Developer",
-    period: "2020 — 2023",
-    tags: ["Vue.js", "Node.js", "Design System", "Testes Automatizados"],
-  },
-  {
-    company: "Zup Innovation",
-    role: "Full Stack Developer",
-    period: "2018 — 2020",
-    tags: ["Angular", "NestJS", "AWS", "Docker", "CI/CD"],
-  },
-];
+import { InteractiveDotGrid } from "@/components/InteractiveDotGrid";
+import { EXPERIENCES } from "./index.const";
 
 export function ExperienceSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -80,7 +48,10 @@ export function ExperienceSection() {
       id="experiencia"
       className="relative w-full bg-bg-section pt-16 sm:pt-24 pb-0 sm:pb-12 border-t border-blue-primary/50 overflow-hidden flex flex-col justify-between"
     >
-      <div className="max-w-5xl w-full mx-auto px-6 sm:px-12 lg:px-20 flex flex-col gap-10">
+      {/* Background interativo de matriz de pontos com repulsão ao mouse */}
+      <InteractiveDotGrid className="absolute inset-0 z-0 pointer-events-none" />
+
+      <div className="relative z-10 max-w-5xl w-full mx-auto px-6 sm:px-12 lg:px-20 flex flex-col gap-10">
         {/* Section Header */}
         <div
           className={`flex items-center gap-3 transition-all duration-700 ease-out ${

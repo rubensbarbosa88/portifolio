@@ -375,9 +375,9 @@
                             {
                               "type": "text",
                               "id": "HiqjZ",
-                              "name": "10+ Value",
+                              "name": "8+ Value",
                               "fill": "$cyan-glow",
-                              "content": "10+",
+                              "content": "8+",
                               "fontFamily": "$font-heading",
                               "fontSize": 26,
                               "fontWeight": "bold"
@@ -387,7 +387,7 @@
                               "id": "r6dz7",
                               "name": "Anos Label",
                               "fill": "$text-muted",
-                              "content": "Anos",
+                              "content": "Anos de Exp",
                               "fontFamily": "$font-body",
                               "fontSize": 11,
                               "fontWeight": "normal"
@@ -397,7 +397,7 @@
                         {
                           "type": "frame",
                           "id": "nWkFU",
-                          "name": "MAU Stat",
+                          "name": "Status Stat",
                           "layout": "vertical",
                           "gap": 2,
                           "alignItems": "center",
@@ -405,19 +405,19 @@
                             {
                               "type": "text",
                               "id": "No5t9",
-                              "name": "500k+ Value",
+                              "name": "Disponível Value",
                               "fill": "$cyan-glow",
-                              "content": "500k+",
+                              "content": "Disponível",
                               "fontFamily": "$font-heading",
-                              "fontSize": 26,
+                              "fontSize": 18,
                               "fontWeight": "bold"
                             },
                             {
                               "type": "text",
                               "id": "Sydbt",
-                              "name": "MAU Label",
+                              "name": "Status Label",
                               "fill": "$text-muted",
-                              "content": "MAU",
+                              "content": "P/ Contratação",
                               "fontFamily": "$font-body",
                               "fontSize": 11,
                               "fontWeight": "normal"
@@ -427,7 +427,7 @@
                         {
                           "type": "frame",
                           "id": "XUhWD",
-                          "name": "MFEs Stat",
+                          "name": "Modalidade Stat",
                           "layout": "vertical",
                           "gap": 2,
                           "alignItems": "center",
@@ -435,19 +435,19 @@
                             {
                               "type": "text",
                               "id": "a3pKTv",
-                              "name": "15+ Value",
+                              "name": "Remoto Value",
                               "fill": "$cyan-glow",
-                              "content": "15+",
+                              "content": "Remoto",
                               "fontFamily": "$font-heading",
-                              "fontSize": 26,
+                              "fontSize": 22,
                               "fontWeight": "bold"
                             },
                             {
                               "type": "text",
                               "id": "PCSLB",
-                              "name": "MFEs Label",
+                              "name": "Modalidade Label",
                               "fill": "$text-muted",
-                              "content": "MFEs",
+                              "content": "Ou Híbrido",
                               "fontFamily": "$font-body",
                               "fontSize": 11,
                               "fontWeight": "normal"
@@ -457,7 +457,7 @@
                         {
                           "type": "frame",
                           "id": "Foh5T",
-                          "name": "LCP Stat",
+                          "name": "Stack Stat",
                           "layout": "vertical",
                           "gap": 2,
                           "alignItems": "center",
@@ -465,19 +465,19 @@
                             {
                               "type": "text",
                               "id": "cOLN6",
-                              "name": "< 1.2s Value",
+                              "name": "React Value",
                               "fill": "$cyan-glow",
-                              "content": "< 1.2s",
+                              "content": "React / Next",
                               "fontFamily": "$font-heading",
-                              "fontSize": 26,
+                              "fontSize": 18,
                               "fontWeight": "bold"
                             },
                             {
                               "type": "text",
                               "id": "D3tvl",
-                              "name": "LCP Label",
+                              "name": "Stack Label",
                               "fill": "$text-muted",
-                              "content": "LCP",
+                              "content": "Front-end Sr",
                               "fontFamily": "$font-body",
                               "fontSize": 11,
                               "fontWeight": "normal"
@@ -3143,9 +3143,9 @@
                         {
                           "type": "text",
                           "id": "iDlpc",
-                          "name": "Design System Name",
+                          "name": "Microfrontends Name",
                           "fill": "$cyan-glow",
-                          "content": "Design System",
+                          "content": "Plataforma de Microfrontends",
                           "fontFamily": "$font-heading",
                           "fontSize": 16,
                           "fontWeight": "bold"
@@ -3153,11 +3153,11 @@
                         {
                           "type": "text",
                           "id": "IKsQ6",
-                          "name": "Design System Desc",
+                          "name": "Microfrontends Desc",
                           "fill": "$text-secondary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Biblioteca de componentes reutilizáveis com documentação interativa e testes visuais automatizados.",
+                          "content": "Arquitetura modular com Module Federation e React, desacoplando deploys e orquestrando múltiplas squads globais.",
                           "lineHeight": 1.5,
                           "fontFamily": "$font-body",
                           "fontSize": 13,
@@ -3166,7 +3166,7 @@
                         {
                           "type": "frame",
                           "id": "QHpW0",
-                          "name": "Design System Tags",
+                          "name": "Microfrontends Tags",
                           "width": "fill_container",
                           "gap": 6,
                           "children": [
@@ -3196,7 +3196,7 @@
                             {
                               "type": "frame",
                               "id": "GuQJ6",
-                              "name": "Storybook PTag",
+                              "name": "Module Federation PTag",
                               "fill": "#1a3a5c",
                               "cornerRadius": 3,
                               "padding": [
@@ -3207,9 +3207,9 @@
                                 {
                                   "type": "text",
                                   "id": "QGF7W",
-                                  "name": "Storybook PT",
+                                  "name": "Module Federation PT",
                                   "fill": "$cyan-light",
-                                  "content": "Storybook",
+                                  "content": "Module Federation",
                                   "fontFamily": "$font-mono",
                                   "fontSize": 10,
                                   "fontWeight": "normal"
@@ -3242,7 +3242,7 @@
                             {
                               "type": "frame",
                               "id": "wurGB",
-                              "name": "Styled Components PTag",
+                              "name": "CI/CD PTag",
                               "fill": "#1a3a5c",
                               "cornerRadius": 3,
                               "padding": [
@@ -3253,9 +3253,9 @@
                                 {
                                   "type": "text",
                                   "id": "wuhbF",
-                                  "name": "Styled Components PT",
+                                  "name": "CI/CD PT",
                                   "fill": "$cyan-light",
-                                  "content": "Styled Components",
+                                  "content": "CI/CD",
                                   "fontFamily": "$font-mono",
                                   "fontSize": 10,
                                   "fontWeight": "normal"
@@ -3333,9 +3333,9 @@
                         {
                           "type": "text",
                           "id": "N4QVAr",
-                          "name": "E-commerce Platform Name",
+                          "name": "Design System Name",
                           "fill": "$cyan-glow",
-                          "content": "E-commerce Platform",
+                          "content": "Design System Corporativo",
                           "fontFamily": "$font-heading",
                           "fontSize": 16,
                           "fontWeight": "bold"
@@ -3343,11 +3343,11 @@
                         {
                           "type": "text",
                           "id": "FNpr5",
-                          "name": "E-commerce Platform Desc",
+                          "name": "Design System Desc",
                           "fill": "$text-secondary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Plataforma de e-commerce com arquitetura de microfrontends e alta escalabilidade.",
+                          "content": "Biblioteca multimarca de componentes agnósticos com tokens de design, documentação no Storybook e testes de regressão.",
                           "lineHeight": 1.5,
                           "fontFamily": "$font-body",
                           "fontSize": 13,
@@ -3356,14 +3356,14 @@
                         {
                           "type": "frame",
                           "id": "B2kkRJ",
-                          "name": "E-commerce Platform Tags",
+                          "name": "Design System Tags",
                           "width": "fill_container",
                           "gap": 6,
                           "children": [
                             {
                               "type": "frame",
                               "id": "KsBGQ",
-                              "name": "Next.js PTag",
+                              "name": "React / Vue PTag",
                               "fill": "#1a3a5c",
                               "cornerRadius": 3,
                               "padding": [
@@ -3374,9 +3374,9 @@
                                 {
                                   "type": "text",
                                   "id": "Z0XdeP",
-                                  "name": "Next.js PT",
+                                  "name": "React / Vue PT",
                                   "fill": "$cyan-light",
-                                  "content": "Next.js",
+                                  "content": "React / Vue",
                                   "fontFamily": "$font-mono",
                                   "fontSize": 10,
                                   "fontWeight": "normal"
@@ -3386,7 +3386,7 @@
                             {
                               "type": "frame",
                               "id": "xsA9N",
-                              "name": "Module Federation PTag",
+                              "name": "Storybook PTag",
                               "fill": "#1a3a5c",
                               "cornerRadius": 3,
                               "padding": [
@@ -3397,9 +3397,9 @@
                                 {
                                   "type": "text",
                                   "id": "aVspq",
-                                  "name": "Module Federation PT",
+                                  "name": "Storybook PT",
                                   "fill": "$cyan-light",
-                                  "content": "Module Federation",
+                                  "content": "Storybook",
                                   "fontFamily": "$font-mono",
                                   "fontSize": 10,
                                   "fontWeight": "normal"
@@ -3409,7 +3409,7 @@
                             {
                               "type": "frame",
                               "id": "RB1xa",
-                              "name": "Node.js PTag",
+                              "name": "Tokens PTag",
                               "fill": "#1a3a5c",
                               "cornerRadius": 3,
                               "padding": [
@@ -3420,9 +3420,9 @@
                                 {
                                   "type": "text",
                                   "id": "YHoxe",
-                                  "name": "Node.js PT",
+                                  "name": "Tokens PT",
                                   "fill": "$cyan-light",
-                                  "content": "Node.js",
+                                  "content": "Design Tokens",
                                   "fontFamily": "$font-mono",
                                   "fontSize": 10,
                                   "fontWeight": "normal"
@@ -3432,7 +3432,7 @@
                             {
                               "type": "frame",
                               "id": "a9d3eU",
-                              "name": "PostgreSQL PTag",
+                              "name": "A11y PTag",
                               "fill": "#1a3a5c",
                               "cornerRadius": 3,
                               "padding": [
@@ -3443,9 +3443,9 @@
                                 {
                                   "type": "text",
                                   "id": "MB8IS",
-                                  "name": "PostgreSQL PT",
+                                  "name": "A11y PT",
                                   "fill": "$cyan-light",
-                                  "content": "PostgreSQL",
+                                  "content": "Acessibilidade",
                                   "fontFamily": "$font-mono",
                                   "fontSize": 10,
                                   "fontWeight": "normal"
@@ -3523,9 +3523,9 @@
                         {
                           "type": "text",
                           "id": "U1PIDf",
-                          "name": "Dashboard Analytics Name",
+                          "name": "Portfolio Name",
                           "fill": "$cyan-glow",
-                          "content": "Dashboard Analytics",
+                          "content": "Portfolio High-Performance",
                           "fontFamily": "$font-heading",
                           "fontSize": 16,
                           "fontWeight": "bold"
@@ -3533,11 +3533,11 @@
                         {
                           "type": "text",
                           "id": "xKt2Z",
-                          "name": "Dashboard Analytics Desc",
+                          "name": "Portfolio Desc",
                           "fill": "$text-secondary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container",
-                          "content": "Painel de análise de dados em tempo real com visualizações interativas.",
+                          "content": "Aplicação web moderna construída com Next.js App Router, Tailwind v4, animações fluidas e UI projetada no Pencil.",
                           "lineHeight": 1.5,
                           "fontFamily": "$font-body",
                           "fontSize": 13,
@@ -3546,14 +3546,14 @@
                         {
                           "type": "frame",
                           "id": "a41PQ",
-                          "name": "Dashboard Analytics Tags",
+                          "name": "Portfolio Tags",
                           "width": "fill_container",
                           "gap": 6,
                           "children": [
                             {
                               "type": "frame",
                               "id": "EKFYi",
-                              "name": "Vue.js PTag",
+                              "name": "Next.js PTag",
                               "fill": "#1a3a5c",
                               "cornerRadius": 3,
                               "padding": [
@@ -3564,9 +3564,9 @@
                                 {
                                   "type": "text",
                                   "id": "T7vjeh",
-                                  "name": "Vue.js PT",
+                                  "name": "Next.js PT",
                                   "fill": "$cyan-light",
-                                  "content": "Vue.js",
+                                  "content": "Next.js 16",
                                   "fontFamily": "$font-mono",
                                   "fontSize": 10,
                                   "fontWeight": "normal"
@@ -3576,7 +3576,7 @@
                             {
                               "type": "frame",
                               "id": "Nn226",
-                              "name": "D3.js PTag",
+                              "name": "React PTag",
                               "fill": "#1a3a5c",
                               "cornerRadius": 3,
                               "padding": [
@@ -3587,9 +3587,9 @@
                                 {
                                   "type": "text",
                                   "id": "Ysazj",
-                                  "name": "D3.js PT",
+                                  "name": "React PT",
                                   "fill": "$cyan-light",
-                                  "content": "D3.js",
+                                  "content": "React 19",
                                   "fontFamily": "$font-mono",
                                   "fontSize": 10,
                                   "fontWeight": "normal"
@@ -3599,7 +3599,7 @@
                             {
                               "type": "frame",
                               "id": "lxEsI",
-                              "name": "WebSocket PTag",
+                              "name": "Tailwind PTag",
                               "fill": "#1a3a5c",
                               "cornerRadius": 3,
                               "padding": [
@@ -3610,9 +3610,9 @@
                                 {
                                   "type": "text",
                                   "id": "NaAtL",
-                                  "name": "WebSocket PT",
+                                  "name": "Tailwind PT",
                                   "fill": "$cyan-light",
-                                  "content": "WebSocket",
+                                  "content": "Tailwind v4",
                                   "fontFamily": "$font-mono",
                                   "fontSize": 10,
                                   "fontWeight": "normal"
@@ -3622,7 +3622,7 @@
                             {
                               "type": "frame",
                               "id": "fZer4",
-                              "name": "NestJS PTag",
+                              "name": "TypeScript PTag",
                               "fill": "#1a3a5c",
                               "cornerRadius": 3,
                               "padding": [
@@ -3633,9 +3633,9 @@
                                 {
                                   "type": "text",
                                   "id": "TuKbS",
-                                  "name": "NestJS PT",
+                                  "name": "TypeScript PT",
                                   "fill": "$cyan-light",
-                                  "content": "NestJS",
+                                  "content": "TypeScript",
                                   "fontFamily": "$font-mono",
                                   "fontSize": 10,
                                   "fontWeight": "normal"

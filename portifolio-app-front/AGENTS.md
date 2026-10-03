@@ -21,7 +21,7 @@ Este repositório contém a aplicação web do portfólio profissional de **Rube
 - **Wireframe & UX Source:** Arquivo nativo Pencil em [`portifolio-ux/ux-portifolio.pen`](file:///portifolio-ux/ux-portifolio.pen), print renderizado em [`portifolio-ux/ux-portifolio-preview.png`](file:///portifolio-ux/ux-portifolio-preview.png) e guia completo em [`portifolio-ux/README.md`](file:///portifolio-ux/README.md).
 - **Seções Principais:**
   1. **Navbar:** Logo terminal (`> RUBENS.DEV`), links de navegação e botão CTA (*Download CV*).
-  2. **Hero:** Layout split — Coluna esquerda com saudações em mono (`// Hello World`), nome, cargo, bio, redes sociais e métricas (*Anos, MAU, MFEs, LCP*); Coluna direita com Avatar envolto em anéis concêntricos com brilho ciano, scratches decorativos e grid hexagonal.
+  2. **Hero:** Layout split — Coluna esquerda com saudações em mono (`// Hello World`), nome, cargo, bio, redes sociais e métricas (*8+ Anos de Exp, Disponível p/ Contratação, Remoto ou Híbrido, React / Next Front-end Sr*); Coluna direita com Avatar envolto em anéis concêntricos com brilho ciano, scratches decorativos e grid hexagonal.
   3. **Experience:** Linha do tempo vertical com marcadores circulares e cards de empresas/cargos.
   4. **Skills:** Grid de cartões por categoria (Front-end, Back-end, Arquitetura, DevOps/Cloud) com ícones da biblioteca Lucide.
   5. **Projects:** Vitrine em grid com visualização de projetos desenvolvidos.

@@ -7,7 +7,7 @@ import type { NavbarProps, NavItem } from "./types";
 const NAV_ITEMS: NavItem[] = [
   { label: "Experiência", href: "#experiencia" },
   { label: "Skills", href: "#skills" },
-  { label: "Projetos", href: "#projetos" },
+  // { label: "Projetos", href: "#projetos" },
   { label: "Contato", href: "#contato" },
 ];
 

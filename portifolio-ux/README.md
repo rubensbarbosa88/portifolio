@@ -40,7 +40,7 @@ O design do layout (desenhado na largura padrão de desktop `1440px`) é compost
 │    RUBENS BARBOSA            [ Foto com HUD ]          │
 │    > SENIOR FRONT-END DEV <  [ Anéis Ciano  ]          │
 │    Bio & Botões de Ação      [ Indicadores  ]          │
-│    Métricas: 10+ | 500k+ | 15+ | <1.2s                 │
+│    Métricas: 8+ | Disponível | Remoto | React / Next       │
 ├────────────────────────────────────────────────────────┤
 │ 3. TRAJETÓRIA PROFISSIONAL:                            │
 │    Timeline vertical com marcadores e cards:           │
@@ -51,19 +51,19 @@ O design do layout (desenhado na largura padrão de desktop `1440px`) é compost
 │ 4. ECOSSISTEMA TÉCNICO:                                │
 │    Grid 4 colunas: Front-end | Back-end | DevOps | Arq │
 ├────────────────────────────────────────────────────────┤
-│ 5. PROJETOS EM DESTAQUE:                               │
-│    Cards: Design System | E-commerce | Dashboard       │
+│ 5. PROJETOS EM DESTAQUE (CASES TÉCNICOS):              │
+│    Cards: Microfrontends | Design System | Portfolio   │
 └────────────────────────────────────────────────────────┘
 ```
 
 ### Detalhamento das Seções:
 1. **Header / Navbar:** Barra fixa com logotipo estilizado `> RUBENS.DEV`, links de âncora (*Sobre mim*, *Skills*, *Projetos*, *Contato*) e botão de destaque em pílula vermelho `DOWNLOAD CV`.
 2. **Hero Section (Split-Screen):**
-   - **Coluna Esquerda:** Badge `< DISPONÍVEL >`, título imponente com `RUBENS` em branco e `BARBOSA` em ciano neon com brilho, subtítulo em colchetes angulares, bio objetiva de posicionamento e botões de ação (*Ver Projetos*, redes sociais). Na base, métricas de autoridade técnica (**10+** Anos, **500k+** Usuários, **15+** Projetos, **< 1.2s** LCP).
+   - **Coluna Esquerda:** Badge `< DISPONÍVEL >`, título imponente com `RUBENS` em branco e `BARBOSA` em ciano neon com brilho, subtítulo em colchetes angulares, bio objetiva de posicionamento e botões de ação (*Ver Projetos*, redes sociais). Na base, telemetria de atuação e status (**8+** Anos de Exp, **Disponível** p/ Contratação, **Remoto** ou Híbrido, **React / Next** Front-end Sr).
    - **Coluna Direita:** Avatar do Rubens em recorte circular envolto por anéis concêntricos de neon ciano e cantoneiras HUD nos quatro cantos em vermelho e ciano.
 3. **Trajetória Profissional (Timeline):** Linha vertical luminosa com nós interativos conectando as passagens por **Julius Baer** (Microfrontends e React no setor financeiro global), **Itaú Unibanco** (Design System e Vue.js no maior banco da América Latina) e **Zup Innovation** (Angular, NestJS e soluções em nuvem).
 4. **Ecossistema Técnico (Skills):** 4 cards com cabeçalhos destacados por ícones temáticos e badges técnicas: Front-end, Back-end, DevOps e Arquitetura de Software.
-5. **Projetos em Destaque:** 3 vitrines de projetos com área de thumbnail gradiente, resumo técnico objetivo e tags das tecnologias utilizadas (Design System corporativo, Plataforma de Microfrontends e Dashboard em tempo real com WebSocket).
+5. **Projetos em Destaque (Cases Técnicos):** 3 vitrines de arquitetura focadas em impacto corporativo real: **Plataforma de Microfrontends** (Module Federation no setor de Wealth Management), **Design System Corporativo** (componentes multimarca, tokens e acessibilidade) e **Portfolio High-Performance** (Next.js 16, React 19, Tailwind v4 e UI Pencil).
 
 ---
 

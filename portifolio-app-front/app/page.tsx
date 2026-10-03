@@ -2,7 +2,7 @@ import { Footer } from "@/components/Footer";
 import { Navbar } from "@/components/Navbar";
 import { ExperienceSection } from "./_components/ExperienceSection";
 import { HeroSection } from "./_components/HeroSection";
-import { ProjectsSection } from "./_components/ProjectsSection";
+// import { ProjectsSection } from "./_components/ProjectsSection";
 import { SkillsSection } from "./_components/SkillsSection";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
         <HeroSection />
         <ExperienceSection />
         <SkillsSection />
-        <ProjectsSection />
+        {/* <ProjectsSection /> */}
       </main>
       <Footer />
     </div>

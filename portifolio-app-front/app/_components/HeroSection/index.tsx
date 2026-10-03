@@ -1,41 +1,14 @@
 import Image from "next/image";
+
 import { GlyphFlowBackground } from "@/components/GlyphFlowBackground";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
-
-interface StatItem {
-  value: string;
-  label: string;
-}
-
-const STATS: StatItem[] = [
-  { value: "10+", label: "Anos" },
-  { value: "500k+", label: "MAU" },
-  { value: "15+", label: "MFEs" },
-  { value: "< 1.2s", label: "LCP" },
-];
+import { STATS } from "./index.const";
 
 export function HeroSection() {
   return (
     <section className="relative w-full min-h-[calc(100vh-64px)] bg-bg-dark flex items-center justify-center overflow-hidden py-16 px-6 sm:px-12 lg:px-20">
       {/* Dynamic Matrix Glyph Rain + Flow Field Vortex Background */}
       <GlyphFlowBackground className="opacity-45" />
-
-      {/* Decorative Cyberpunk Background Scratch Lines */}
-      <div className="absolute inset-0 pointer-events-none opacity-25 overflow-hidden">
-        <div className="absolute w-px h-[650px] bg-blue-primary left-[55%] top-[10%] rotate-[4.9deg]" />
-        <div className="absolute w-px h-[600px] bg-blue-primary left-[58%] top-[8%] rotate-[2.4deg]" />
-        <div className="absolute w-px h-[520px] bg-blue-primary left-[61%] top-[7%] rotate-[3.8deg]" />
-        <div className="absolute w-px h-[780px] bg-blue-primary left-[64%] top-[6%] rotate-[2.9deg]" />
-        <div className="absolute w-px h-[570px] bg-blue-primary left-[67%] top-[5%] rotate-[3.8deg]" />
-        <div className="absolute w-px h-[590px] bg-blue-primary left-[70%] top-[4%] rotate-[4.6deg]" />
-        <div className="absolute w-px h-[700px] bg-blue-primary left-[73%] top-[8%] rotate-[4.1deg]" />
-        <div className="absolute w-px h-[680px] bg-blue-primary left-[76%] top-[6%] rotate-[4.4deg]" />
-        <div className="absolute w-px h-[660px] bg-blue-primary left-[79%] top-[7%] rotate-[2.0deg]" />
-        <div className="absolute w-px h-[560px] bg-blue-primary left-[82%] top-[5%] rotate-[4.3deg]" />
-        <div className="absolute w-px h-[670px] bg-blue-primary left-[85%] top-[8%] rotate-[3.8deg]" />
-        {/* Subtle grid accent */}
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,color-mix(in_srgb,var(--color-blue-primary)_6%,transparent)_1px,transparent_1px),linear-gradient(to_bottom,color-mix(in_srgb,var(--color-blue-primary)_6%,transparent)_1px,transparent_1px)] bg-[size:4rem_4rem]" />
-      </div>
 
       <div className="max-w-7xl w-full mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center relative z-10">
         {/* Left Column: Greeting, Name, Role, Bio, Social, Stats */}
@@ -81,7 +54,7 @@ export function HeroSection() {
           {/* Social Links */}
           <div className="flex items-center gap-4 pt-2">
             <a
-              href="https://github.com"
+              href="https://github.com/rubensbarbosa88"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 bg-bg-card border border-cyan-glow text-cyan-glow px-5 py-2.5 rounded font-mono text-xs sm:text-sm transition-all duration-200 hover:bg-cyan-glow/10 hover:shadow-[0_0_15px_rgba(0,212,255,0.3)] active:scale-95"
@@ -91,7 +64,7 @@ export function HeroSection() {
             </a>
 
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/rubens-barbosa88"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-2 bg-bg-card border border-cyan-glow text-cyan-glow px-5 py-2.5 rounded font-mono text-xs sm:text-sm transition-all duration-200 hover:bg-cyan-glow/10 hover:shadow-[0_0_15px_rgba(0,212,255,0.3)] active:scale-95"
@@ -102,16 +75,20 @@ export function HeroSection() {
           </div>
 
           {/* Stats Row */}
-          <div className="grid grid-cols-4 gap-4 sm:gap-8 pt-6 max-w-lg border-t border-blue-primary/60">
+          <div className="grid grid-cols-2 sm:flex sm:items-center gap-6 sm:gap-10 pt-2">
             {STATS.map((stat) => (
               <div
                 key={stat.label}
-                className="flex flex-col items-start sm:items-center"
+                className="flex flex-col items-center justify-center gap-0.5 text-center"
               >
-                <span className="font-orbitron text-xl sm:text-2xl font-bold text-cyan-glow">
-                  {stat.value}
-                </span>
-                <span className="font-sans text-[11px] uppercase tracking-wider text-text-muted mt-1">
+                <div className="h-8 flex items-center justify-center">
+                  <span
+                    className={`font-orbitron font-bold text-cyan-glow whitespace-nowrap ${stat.valueSizeClass}`}
+                  >
+                    {stat.value}
+                  </span>
+                </div>
+                <span className="font-sans text-[13px] font-semibold text-text-secondary whitespace-nowrap">
                   {stat.label}
                 </span>
               </div>

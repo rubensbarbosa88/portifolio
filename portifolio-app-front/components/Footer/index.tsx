@@ -2,14 +2,18 @@ import { Mail } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 
 import { HexagonDecal } from "../HexagonDecal";
+import { InteractiveDotGrid } from "../InteractiveDotGrid";
 
 export function Footer() {
   return (
     <footer
       id="contato"
-      className="w-full bg-bg-dark border-t border-blue-primary pt-12 px-6 sm:px-12 lg:px-20 text-center"
+      className="relative w-full bg-bg-dark border-t border-blue-primary pt-12 px-6 sm:px-12 lg:px-20 text-center overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto flex flex-col items-center gap-6">
+      {/* Background interativo de matriz de pontos com repulsão ao mouse */}
+      <InteractiveDotGrid className="absolute inset-0 z-0 pointer-events-none" />
+
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center gap-6">
         {/* Terminal Logo */}
         <div className="flex items-center gap-2">
           <span className="font-mono text-xl font-bold text-cyan-glow">
@@ -28,7 +32,7 @@ export function Footer() {
         {/* Social / Contact Links */}
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com"
+            href="https://github.com/rubensbarbosa88"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 rounded-full bg-bg-card border border-blue-primary text-text-secondary hover:text-cyan-glow hover:border-cyan-glow transition-all"
@@ -37,7 +41,7 @@ export function Footer() {
             <GithubIcon className="w-5 h-5" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/rubens-barbosa88"
             target="_blank"
             rel="noopener noreferrer"
             className="p-2.5 rounded-full bg-bg-card border border-blue-primary text-text-secondary hover:text-cyan-glow hover:border-cyan-glow transition-all"
@@ -46,7 +50,7 @@ export function Footer() {
             <LinkedinIcon className="w-5 h-5" />
           </a>
           <a
-            href="mailto:contato@rubens.dev"
+            href="mailto:rubens.barbosa88@gmail.com"
             className="p-2.5 rounded-full bg-bg-card border border-blue-primary text-text-secondary hover:text-cyan-glow hover:border-cyan-glow transition-all"
             aria-label="Email"
           >
@@ -61,7 +65,7 @@ export function Footer() {
       </div>
 
       {/* Decalque em degradê integrado ao fundo da seção (100% width) */}
-      <div className="w-full mt-4 sm:mt-6">
+      <div className="relative z-10 w-full mt-4 sm:mt-6">
         <HexagonDecal gradientDirection="red-to-cyan" />
       </div>
     </footer>

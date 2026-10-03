@@ -1,73 +1,16 @@
-import { Box, Code, Layers, type LucideIcon, Server } from "lucide-react";
-
-interface SkillCategory {
-  title: string;
-  icon: LucideIcon;
-  skills: string[];
-}
-
-const SKILL_CATEGORIES: SkillCategory[] = [
-  {
-    title: "FRONT-END",
-    icon: Code,
-    skills: [
-      "React",
-      "TypeScript",
-      "Next.js",
-      "Vue.js",
-      "Tailwind CSS",
-      "HTML/CSS",
-      "JavaScript",
-    ],
-  },
-  {
-    title: "BACK-END",
-    icon: Server,
-    skills: [
-      "Node.js",
-      "NestJS",
-      "Express",
-      "PostgreSQL",
-      "MongoDB",
-      "REST API",
-      "GraphQL",
-    ],
-  },
-  {
-    title: "DEVOPS",
-    icon: Box,
-    skills: [
-      "Docker",
-      "AWS",
-      "CI/CD",
-      "Git",
-      "Linux",
-      "Vercel",
-      "GitHub Actions",
-    ],
-  },
-  {
-    title: "ARQUITETURA",
-    icon: Layers,
-    skills: [
-      "Microfrontends",
-      "Module Federation",
-      "Design System",
-      "Clean Code",
-      "SOLID",
-      "TDD",
-      "Agile",
-    ],
-  },
-];
+import { InteractiveDotGrid } from "@/components/InteractiveDotGrid";
+import { SKILL_CATEGORIES } from "./index.const";
 
 export function SkillsSection() {
   return (
     <section
       id="skills"
-      className="w-full bg-bg-dark py-16 sm:py-24 px-6 sm:px-12 lg:px-20 border-t border-blue-primary/50"
+      className="relative w-full bg-bg-dark py-16 sm:py-24 px-6 sm:px-12 lg:px-20 border-t border-blue-primary/50 overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto flex flex-col gap-10">
+      {/* Background interativo de matriz de pontos com repulsão ao mouse */}
+      <InteractiveDotGrid className="absolute inset-0 z-0 pointer-events-none" />
+
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col gap-10">
         {/* Section Header */}
         <div className="flex items-center gap-3">
           <div className="w-1 h-8 bg-red-accent rounded-sm" />
