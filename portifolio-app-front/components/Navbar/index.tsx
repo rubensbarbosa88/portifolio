@@ -45,7 +45,7 @@ export function Navbar({ cvUrl = "#" }: NavbarProps) {
         </nav>
 
         {/* Desktop CTA Button */}
-        <div className="hidden md:flex items-center">
+        <div className="hidden md:flex items-center invisible">
           <a
             href={cvUrl}
             className="flex items-center gap-2 bg-red-accent hover:bg-red-hover text-white text-[13px] font-sans font-bold px-5 py-2 rounded transition-all duration-200 hover:shadow-[0_0_15px_rgba(230,57,70,0.5)] active:scale-95"
