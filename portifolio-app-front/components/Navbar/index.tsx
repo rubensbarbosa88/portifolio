@@ -26,7 +26,7 @@ export function Navbar({ cvUrl = "#" }: NavbarProps) {
             &gt;
           </span>
           <span className="font-orbitron text-base font-bold tracking-wider text-text-primary">
-            RUBENS.DEV
+            rubensbarbosa.dev
           </span>
         </a>
 
