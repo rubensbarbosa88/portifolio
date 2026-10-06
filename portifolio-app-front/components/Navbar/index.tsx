@@ -88,7 +88,7 @@ export function Navbar({ cvUrl = "#" }: NavbarProps) {
           <a
             href={cvUrl}
             onClick={() => setMobileMenuOpen(false)}
-            className="flex items-center justify-center gap-2 bg-red-accent hover:bg-red-hover text-white text-[13px] font-sans font-bold px-5 py-2.5 rounded transition-all mt-2"
+            className="flex items-center justify-center gap-2 bg-red-accent hover:bg-red-hover text-white text-[13px] font-sans font-bold px-5 py-2.5 rounded transition-all mt-2 invisible"
           >
             <Download className="w-3.5 h-3.5" />
             <span>DOWNLOAD CV</span>
