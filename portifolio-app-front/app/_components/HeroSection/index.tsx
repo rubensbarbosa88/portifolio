@@ -1,8 +1,7 @@
-import Image from "next/image";
-
 import { GlyphFlowBackground } from "@/components/GlyphFlowBackground";
 import { GithubIcon, LinkedinIcon } from "@/components/icons";
 import { STATS } from "./index.const";
+import { MatrixAvatar } from "./MatrixAvatar";
 
 export function HeroSection() {
   return (
@@ -102,6 +101,19 @@ export function HeroSection() {
             {/* Radial Glow */}
             <div className="absolute inset-0 rounded-full radial-glow-cyan animate-pulse-glow pointer-events-none" />
 
+            {/* Matrix-style Avatar (dissolve radial no glyph rain do fundo) */}
+            <MatrixAvatar
+              src="/avatar.png"
+              alt="Rubens Barbosa"
+              className="absolute inset-0"
+              style={{
+                maskImage:
+                  "radial-gradient(circle closest-side, #000 74%, transparent 100%)",
+                WebkitMaskImage:
+                  "radial-gradient(circle closest-side, #000 74%, transparent 100%)",
+              }}
+            />
+
             {/* Corner Tech Accents in Red */}
             {/* Top-Left */}
             <div className="absolute top-2 left-2 w-5 h-[2px] bg-red-accent" />
@@ -112,22 +124,10 @@ export function HeroSection() {
             <div className="absolute bottom-2 right-2 w-[2px] h-5 bg-red-accent" />
 
             {/* Outer Cyan Ring */}
-            <div className="absolute w-[270px] h-[270px] sm:w-[320px] sm:h-[320px] rounded-full border-2 border-cyan-glow transition-transform duration-700 hover:rotate-45" />
+            <div className="absolute w-[300px] h-[300px] sm:w-[380px] sm:h-[380px] rounded-full border-2 border-cyan-glow transition-transform duration-700 hover:rotate-45" />
 
             {/* Inner Red Ring */}
-            <div className="absolute w-[255px] h-[255px] sm:w-[304px] sm:h-[304px] rounded-full border border-red-accent" />
-
-            {/* Avatar Image Circle */}
-            <div className="relative w-[240px] h-[240px] sm:w-[290px] sm:h-[290px] rounded-full overflow-hidden border border-blue-primary shadow-2xl">
-              <Image
-                src="/avatar.webp"
-                alt="Rubens Barbosa"
-                fill
-                priority
-                className="object-cover transition-transform duration-500 hover:scale-105"
-                sizes="(max-width: 640px) 240px, 290px"
-              />
-            </div>
+            <div className="absolute w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] rounded-full border border-red-accent" />
           </div>
         </div>
       </div>
