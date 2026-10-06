@@ -36,7 +36,7 @@ export function HeroSection() {
               &lt;
             </span>
             <span className="font-orbitron text-base sm:text-lg lg:text-xl font-medium tracking-wide text-text-primary">
-              SENIOR FRONT-END DEVELOPER
+              Full Stack Developer
             </span>
             <span className="font-mono text-sm sm:text-base text-red-accent font-bold">
               /&gt;
@@ -45,9 +45,7 @@ export function HeroSection() {
 
           {/* Bio Text */}
           <p className="font-sans text-sm sm:text-base text-text-secondary leading-relaxed max-w-xl">
-            Desenvolvedor Full Stack com experiência em Front-end e Back-end,
-            especializado em React, TypeScript, Next.js e Vue.js. Foco em
-            qualidade, performance e boas práticas.
+            Desenvolvedor de Software com experiência na criação e evolução de aplicações web, atuando principalmente no desenvolvimento Front-end, com foco em qualidade, performance e boas práticas
           </p>
 
           {/* Social Links */}
