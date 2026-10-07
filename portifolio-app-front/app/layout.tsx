@@ -1,5 +1,7 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Orbitron } from "next/font/google";
+
 import "./globals.css";
 
 const orbitron = Orbitron({
@@ -20,7 +22,13 @@ const inter = Inter({
   display: "swap",
 });
 
+const siteUrl =
+  process.env.NODE_ENV === "production"
+    ? "https://www.rubensbarbosa.dev/"
+    : "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Rubens Barbosa | Full Stack Developer",
   description: "Portfólio pessoal de Rubens Barbosa.",
   openGraph: {
@@ -50,6 +58,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-bg-dark text-text-primary selection:bg-cyan-glow/20 selection:text-cyan-glow">
         {children}
+        <Analytics />
       </body>
     </html>
   );
