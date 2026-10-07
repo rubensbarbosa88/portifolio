@@ -21,9 +21,21 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "RUBENS.DEV | Rubens Barbosa - Senior Front-end Developer",
-  description:
-    "Portfólio de Rubens Barbosa — Senior Front-end Developer especializado em React, TypeScript, Next.js, Microfrontends e Design System.",
+  title: "Rubens Barbosa | Full Stack Developer",
+  description: "Portfólio pessoal de Rubens Barbosa.",
+  openGraph: {
+    title: "Rubens Barbosa | Full Stack Developer",
+    description: "Portfólio pessoal de Rubens Barbosa.",
+    type: "website",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Portfólio de Rubens Barbosa",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
