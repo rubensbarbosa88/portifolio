@@ -1,38 +1,27 @@
-import { ExternalLink, FolderOpen } from "lucide-react";
+import Image from "next/image";
+import { ExternalLink } from "lucide-react";
+
 import { GithubIcon } from "@/components/icons";
+import { InteractiveDotGrid } from "@/components/InteractiveDotGrid";
 
 interface ProjectItem {
   name: string;
   description: string;
   tags: string[];
+  thumb: string;
   githubUrl?: string;
   liveUrl?: string;
 }
 
 const PROJECTS: ProjectItem[] = [
   {
-    name: "Design System",
+    name: "rbs.video-converter",
     description:
-      "Biblioteca de componentes reutilizáveis com documentação interativa e testes visuais automatizados.",
-    tags: ["React", "Storybook", "TypeScript", "Styled Components"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-  },
-  {
-    name: "E-commerce Platform",
-    description:
-      "Plataforma de e-commerce com arquitetura de microfrontends e alta escalabilidade.",
-    tags: ["Next.js", "Module Federation", "Node.js", "PostgreSQL"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-  },
-  {
-    name: "Dashboard Analytics",
-    description:
-      "Painel de análise de dados em tempo real com visualizações interativas.",
-    tags: ["Vue.js", "D3.js", "WebSocket", "NestJS"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
+      "Aplicação web para conversão de vídeos entre diferentes formatos, com foco na otimização de recursos em um ambiente de servidor limitado. O projeto inclui processamento com FFmpeg, controle de consumo de memória, validação e gerenciamentode arquivos, e controle de acesso à API.",
+    tags: ["Vue 2", "Vuetify", "Node.js", "Express", "FFmpeg"],
+    thumb: "/thumb-video-converter.png",
+    githubUrl: "https://github.com/rubensbarbosa88/video-converter-front",
+    liveUrl: "https://video-converter.rubensbarbosa.dev",
   },
 ];
 
@@ -42,6 +31,9 @@ export function ProjectsSection() {
       id="projetos"
       className="relative w-full bg-bg-section pt-16 sm:pt-24 pb-8 sm:pb-12 border-t border-blue-primary/50 overflow-hidden flex flex-col justify-between"
     >
+      {/* Background interativo de matriz de pontos com repulsão ao mouse */}
+      <InteractiveDotGrid className="absolute inset-0 z-0 pointer-events-none" />
+
       <div className="max-w-7xl w-full mx-auto px-6 sm:px-12 lg:px-20 flex flex-col gap-10">
         {/* Section Header */}
         <div className="flex items-center gap-3">
@@ -60,19 +52,26 @@ export function ProjectsSection() {
             >
               {/* Card Banner with Gradient & Folder Icon */}
               <div className="w-full h-40 bg-gradient-to-br from-blue-primary to-bg-dark flex items-center justify-center relative overflow-hidden">
-                <FolderOpen className="w-12 h-12 text-cyan-muted group-hover:text-cyan-glow group-hover:scale-110 transition-all duration-300" />
+                {/* <FolderOpen className="w-12 h-12 text-cyan-muted group-hover:text-cyan-glow group-hover:scale-110 transition-all duration-300" /> */}
 
+                <Image
+                  src={project.thumb}
+                  alt={`${project.name} thumbnail`}
+                  width={400}
+                  height={160}
+                  className="object-cover w-full h-full group-hover:scale-110 transition-transform duration-300"
+                />
                 {/* Subtle cyber grid lines in banner */}
                 <div className="absolute inset-0 opacity-20 bg-[linear-gradient(to_right,color-mix(in_srgb,var(--color-cyan-glow)_8%,transparent)_1px,transparent_1px),linear-gradient(to_bottom,color-mix(in_srgb,var(--color-cyan-glow)_8%,transparent)_1px,transparent_1px)] bg-[size:1rem_1rem]" />
 
                 {/* Corner quick action icons */}
-                <div className="absolute top-3 right-3 flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                <div className="absolute top-3 right-3 flex items-center gap-2 z-10">
                   {project.githubUrl && (
                     <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-1.5 rounded-full bg-bg-card/80 text-text-secondary hover:text-cyan-glow hover:bg-bg-card transition-colors"
+                      className="p-1.5 rounded-full bg-bg-card/80 border border-blue-primary/50 text-text-secondary group-hover:scale-110 group-hover:border-cyan-glow/40 group-hover:text-text-primary hover:scale-125 hover:text-cyan-glow hover:border-cyan-glow hover:bg-bg-card transition-all duration-200 inline-flex items-center justify-center shadow-sm"
                       aria-label="GitHub Repository"
                     >
                       <GithubIcon className="w-4 h-4" />
@@ -83,7 +82,7 @@ export function ProjectsSection() {
                       href={project.liveUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-1.5 rounded-full bg-bg-card/80 text-text-secondary hover:text-cyan-glow hover:bg-bg-card transition-colors"
+                      className="p-1.5 rounded-full bg-bg-card/80 border border-blue-primary/50 text-text-secondary group-hover:scale-110 group-hover:border-cyan-glow/40 group-hover:text-text-primary hover:scale-125 hover:text-cyan-glow hover:border-cyan-glow hover:bg-bg-card transition-all duration-200 inline-flex items-center justify-center shadow-sm"
                       aria-label="Live Demo"
                     >
                       <ExternalLink className="w-4 h-4" />
